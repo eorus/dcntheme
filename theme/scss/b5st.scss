@@ -1,0 +1,148 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Orus WP Starter
+VERSION:	1.0
+-------------------------------------------------------------------*/
+
+// Pico Source
+// @use "../node_modules/@picocss/pico/scss/pico";
+//$body-bg: #ffffff;
+//$link-color: #4493f8;
+
+$link-color: #d74a49;
+$default-color: #f4f4f4;
+$dark-color: #3b5998;
+$light-color: #f7f7f7;
+$primary-color: #8b9dc3;
+
+$secondary-color: #dfe3ee;
+$info: #15222c;
+
+// Spectre Source
+// Variables and mixins
+@import "../vendor/spectre/src/variables";
+@import "../vendor/spectre/src/mixins";
+
+// Reset and dependencies
+@import "../vendor/spectre/src/normalize";
+@import "../vendor/spectre/src/base";
+
+// Elements
+@import "../vendor/spectre/src/typography";
+//@import "asian";
+@import "../vendor/spectre/src/tables";
+@import "../vendor/spectre/src/buttons";
+@import "../vendor/spectre/src/forms";
+@import "../vendor/spectre/src/labels";
+@import "../vendor/spectre/src/codes";
+@import "../vendor/spectre/src/media";
+
+// Layout
+@import "../vendor/spectre/src/layout";
+@import "../vendor/spectre/src/hero";
+@import "../vendor/spectre/src/navbar";
+
+// Components
+//@import "../vendor/spectre/src/accordions";
+//@import "../vendor/spectre/src/avatars";
+//@import "../vendor/spectre/src/badges";
+@import "../vendor/spectre/src/breadcrumbs";
+//@import "../vendor/spectre/src/bars";
+@import "../vendor/spectre/src/cards";
+//@import "../vendor/spectre/src/chips";
+@import "../vendor/spectre/src/dropdowns";
+//@import "../vendor/spectre/src/empty";
+@import "../vendor/spectre/src/menus";
+//@import "../vendor/spectre/src/modals";
+@import "../vendor/spectre/src/navs";
+@import "../vendor/spectre/src/pagination";
+@import "../vendor/spectre/src/panels";
+//@import "../vendor/spectre/src/popovers";
+//@import "../vendor/spectre/src/steps";
+@import "../vendor/spectre/src/tabs";
+//@import "../vendor/spectre/src/tiles";
+//@import "../vendor/spectre/src/toasts";
+//@import "../vendor/spectre/src/tooltips";
+
+// Utility classes
+@import "../vendor/spectre/src/animations";
+@import "../vendor/spectre/src/utilities";
+
+// Import full Spectre source code
+//@import "../vendor/spectre/src/spectre";
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// 2. Include any default variable overrides here
+
+//@import '../node_modules/bootstrap/scss/functions';
+//@import '../node_modules/bootstrap/scss/variables';
+/* -------begin customization-------- */
+
+/* simply assign the value */
+//$link-decoration: none;
+//$link-hover-decoration: underline;
+//$body-bg: #fff;
+//$primary: orange;
+/* or, use an existing variable */
+//$theme-colors: (
+//  primary: $purple
+//);
+/* -------end customization-------- */
+
+//@import '../node_modules/bootstrap/scss/variables-dark';
+//@import '../node_modules/bootstrap/scss/maps';
+//@import '../node_modules/bootstrap/scss/mixins';
+//@import '../node_modules/bootstrap/scss/utilities';
+
+// Layout & components
+//@import "../node_modules/bootstrap/scss/root";
+//@import "../node_modules/bootstrap/scss/reboot";
+//@import "../node_modules/bootstrap/scss/type";
+//@import "../node_modules/bootstrap/scss/images";
+//@import "../node_modules/bootstrap/scss/containers";
+//@import "../node_modules/bootstrap/scss/grid";
+//@import "../node_modules/bootstrap/scss/forms";
+//@import "../node_modules/bootstrap/scss/buttons";
+//@import "../node_modules/bootstrap/scss/transitions";
+//@import "../node_modules/bootstrap/scss/button-group";
+
+//@import "../node_modules/bootstrap/scss/nav";
+//@import "../node_modules/bootstrap/scss/navbar";
+//@import "../node_modules/bootstrap/scss/card";
+//@import "../node_modules/bootstrap/scss/breadcrumb";
+//@import "../node_modules/bootstrap/scss/carousel";
+
+// Helpers
+//@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+//@import "../node_modules/bootstrap/scss/utilities/api";
+
+// Full bootstrap scss
+//@import "../node_modules/bootstrap/scss/bootstrap.scss" ;
+
+// 5. Add additional custom code here
+@import "b5st/_base";
+@import "b5st/_typography";
+@import "b5st/_code";
+@import "b5st/_lists";
+@import "b5st/_quotes";
+@import "b5st/_layout";
+@import "b5st/_groups";
+@import "b5st/_images-and-galleries";
+@import "b5st/_embeds";
+@import "b5st/_tables";
+@import "b5st/_comments";
+@import "b5st/_footer";
+
+// Main css code
+@import "../css/base.css";
+
+// Bootstrap icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
