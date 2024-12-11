@@ -170,8 +170,7 @@
             <section class="py-5 bg-gray">
                 <div class="container">
                     <div class="columns padme m-0">
-
-                        <div class="column col col-md-6 col-sm-12 px-2">
+                        <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
                             <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
                   						<?php
 									            // WP_Query arguments
@@ -198,13 +197,13 @@
                             </div>
 
                         </div>
-                        <div class="column col col-md-6 col-sm-12 px-2">
+                        <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
                             <div class="card border-0 h-100">
 
 <a href="https://skylum.evyy.net/c/1130509/2206354/3255" target="_top" id="2206354"><img src="//a.impactradius-go.com/display-ad/3255-2206354" border="0" alt="" width="300" height="600"/></a><img height="0" width="0" src="https://skylum.evyy.net/i/1130509/2206354/3255" style="position:absolute;visibility:hidden;" border="0" />
                             </div>
                         </div>
-                         <div class="column col col-md-6 col-sm-12 px-2">
+                        <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
                             <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
                   						<?php
 									            // WP_Query arguments
@@ -231,7 +230,7 @@
                             </div>
 
                         </div>
-                         <div class="column col col-md-6 col-sm-12 px-2">
+                        <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
                             <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
                   						<?php
 									            // WP_Query arguments
@@ -258,7 +257,34 @@
                             </div>
 
                         </div>
-                         <div class="column col col-md-6 col-sm-12 px-2">
+                        <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
+                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                  						<?php
+									            // WP_Query arguments
+                              $args = array(
+                              'post__not_in' => get_option( 'sticky_posts' ),
+   										        'post_type'              => array( 'post' ),
+                              'posts_per_page'         => '5',
+    									        'orderby'                => 'DESC',
+								              );
+
+              								// The Query
+							              	$the_query = new WP_Query( $args );
+                              while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                            <?php get_template_part('loops/newslist-loop', get_post_format()); ?>
+
+                        	  <?php endwhile; wp_reset_postdata(); ?>
+
+                            <div class="text-end mb-5 mb-xl-0">
+                                <a class="text-decoration-none" href="/wordpress/haber">
+                                    Get More News
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                         <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
                             <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
                   						<?php
 									            // WP_Query arguments
