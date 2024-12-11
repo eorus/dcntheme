@@ -5,7 +5,7 @@
 ?>
 
                <!-- Loop -->
-                        <article class="column col col-md-6 col-sm-12">
+                        <article class="column col col-3 col-lg-6 col-md-6 col-sm-12">
                                 <div class="card-image">
                                   <?php the_post_thumbnail( 'sfa-middle', array( 'class' => 'img-responsive' )); ?>
                                 </div>

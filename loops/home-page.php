@@ -20,8 +20,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns align-items-center justify-content-between pax">
-          <h2 class="column col-4 col-mr-auto">Official Announcements</h2>
-          <p class="column col-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></p>
+          <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Official Announcements</h2>
+          <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
         </div>
       </div><!-- End Section Title -->
                     <div class="columns gx-5">
@@ -32,7 +32,6 @@
    										        'post_type'              => array( 'post' ),
                               'posts_per_page'         => '4',
                               'orderby'                => 'DESC',
-                              'category__in'           => '1'
 								              );
 
               								// The Query
@@ -140,8 +139,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns align-items-center justify-content-between pax">
-          <h2 class="column col-4 col-mr-auto">Official Announcements</h2>
-          <p class="column col-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></p>
+          <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Official Announcements</h2>
+        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
         </div>
       </div>
 
@@ -294,8 +293,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns col-gapless align-items-center justify-content-between">
-          <h2 class="column col-4 col-mr-auto">Latest Fimware Updates</h2>
-          <p class="column col-2"><a href="categories.html">See All Announcements</a></p>
+          <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Latest Fimware Updates</h2>
+        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
         </div>
       </div><!-- End Section Title -->
             <div class="columns pax">

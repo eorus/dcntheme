@@ -21,7 +21,7 @@
 <?php b5st_navbar_before();?>
 
 <div class="container">
-<nav class="navbar pax">
+<nav class="navbar pati">
   <section class="p-2">
     <a href="https://www.dailycameranews.com/tag/canon-rumors/" class="btn btn-link">Canon Rumors</a>
     <a href="https://www.dailycameranews.com/tag/sony-rumors/" class="btn btn-link">Sony Rumors</a>
