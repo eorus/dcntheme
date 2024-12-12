@@ -128,9 +128,10 @@ if ( ! function_exists( 'b5st_post_date' ) ) {
 	}
 }
 
+
 if ( ! function_exists('sfa_excerpt_more') ) {
 	function sfa_excerpt_more() {
-		return '&hellip;</p><p><a class="btn btn-primary pati float-right text-white stretched-link" href="'. get_permalink() . '">' . __('Read More', 'b4st') . ' <i class="bi bi-arrow-right"></i>' . '</a></p>';
+		return '&hellip;<div class="card-footer pati float-right"><a class="btn btn-primary text-white stretched-link" href="'. get_permalink() . '">' . __('Read More', 'b4st') . ' <i class="bi bi-arrow-right"></i>' . '</a></div>';
 	}
 }
 add_filter('excerpt_more', 'sfa_excerpt_more');

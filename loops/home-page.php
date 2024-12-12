@@ -16,7 +16,7 @@
 <main id="site-main">
 
 <!-- Blog preview section-->
- <section class="container my-2">
+ <section class="blog-posts container my-2">
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns align-items-center justify-content-between pax">
@@ -24,7 +24,7 @@
           <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
         </div>
       </div><!-- End Section Title -->
-                    <div class="columns gx-5">
+                    <div class="columns pati">
                   						<?php
 									            // WP_Query arguments
                               $args = array(
@@ -32,6 +32,7 @@
    										        'post_type'              => array( 'post' ),
                               'posts_per_page'         => '4',
                               'orderby'                => 'DESC',
+                              'category__in'           => '1'
 								              );
 
               								// The Query
@@ -139,8 +140,8 @@
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns align-items-center justify-content-between pax">
-          <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Official Announcements</h2>
-        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
+          <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Latest Rumors</h2>
+        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/rumors/">See All Rumors</a></div>
         </div>
       </div>
 
@@ -151,7 +152,7 @@
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
+                              'posts_per_page'         => '6',
                               'orderby'                => 'DESC',
                               'category__in'           => '1'
 								              );
@@ -167,17 +168,17 @@
         </section>
 
 
-            <section class="py-5 bg-gray">
+            <section class="py-5 bg-light">
                 <div class="container">
                     <div class="columns padme m-0">
                         <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
-                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                            <h2 class="fw-bolder fs-5 mb-4">Buying Guide</h2>
                   						<?php
 									            // WP_Query arguments
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
+                              'posts_per_page'         => '6',
     									        'orderby'                => 'DESC',
 								              );
 
@@ -189,9 +190,9 @@
 
                         	  <?php endwhile; wp_reset_postdata(); ?>
 
-                            <div class="text-end mb-5 mb-xl-0">
-                                <a class="text-decoration-none" href="/wordpress/haber">
-                                    Get More News
+                            <div class="float-right pati">
+                                <a class="label label-rounded label-primary p-1" href="/tag/best-lenses/">
+                                    Get More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -204,14 +205,14 @@
                             </div>
                         </div>
                         <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
-                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                            <h2 class="fw-bolder fs-5 mb-4">Memory Cards</h2>
                   						<?php
 									            // WP_Query arguments
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
-    									        'orderby'                => 'DESC',
+                              'posts_per_page'         => '6',
+    									        'orderby'                => 'RAND',
 								              );
 
               								// The Query
@@ -222,23 +223,23 @@
 
                         	  <?php endwhile; wp_reset_postdata(); ?>
 
-                            <div class="text-end mb-5 mb-xl-0">
-                                <a class="text-decoration-none" href="/wordpress/haber">
-                                    Get More News
+                            <div class="float-right pati">
+                                <a class="label label-rounded label-primary p-1" href="/tag/memory-cards/">
+                                    Get More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
 
                         </div>
                         <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
-                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                            <h2 class="fw-bolder fs-5 mb-4">Accessories</h2>
                   						<?php
 									            // WP_Query arguments
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
-    									        'orderby'                => 'DESC',
+                              'posts_per_page'         => '6',
+    									        'orderby'                => 'RAND',
 								              );
 
               								// The Query
@@ -249,23 +250,23 @@
 
                         	  <?php endwhile; wp_reset_postdata(); ?>
 
-                            <div class="text-end mb-5 mb-xl-0">
-                                <a class="text-decoration-none" href="/wordpress/haber">
-                                    Get More News
+                            <div class="float-right pati">
+                                <a class="label label-rounded label-primary p-1" href="/tag/accessories/">
+                                    Get More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
 
                         </div>
                         <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
-                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                            <h2 class="fw-bolder fs-5 mb-4">Comparisons</h2>
                   						<?php
 									            // WP_Query arguments
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
-    									        'orderby'                => 'DESC',
+                              'posts_per_page'         => '6',
+    									        'orderby'                => 'RAND',
 								              );
 
               								// The Query
@@ -276,22 +277,22 @@
 
                         	  <?php endwhile; wp_reset_postdata(); ?>
 
-                            <div class="text-end mb-5 mb-xl-0">
-                                <a class="text-decoration-none" href="/wordpress/haber">
-                                    Get More News
+                            <div class="float-right pati">
+                                <a class="label label-rounded label-primary p-1" href="/tag/comparison/">
+                                    Get More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
 
                         </div>
                          <div class="column col col-2 col-lg-4 col-md-6 col-sm-12 px-2">
-                            <h2 class="fw-bolder fs-5 mb-4">Latest News</h2>
+                            <h2 class="fw-bolder fs-5 mb-4">Reviews</h2>
                   						<?php
 									            // WP_Query arguments
                               $args = array(
                               'post__not_in' => get_option( 'sticky_posts' ),
    										        'post_type'              => array( 'post' ),
-                              'posts_per_page'         => '5',
+                              'posts_per_page'         => '6',
     									        'orderby'                => 'DESC',
 								              );
 
@@ -303,9 +304,9 @@
 
                         	  <?php endwhile; wp_reset_postdata(); ?>
 
-                            <div class="text-end mb-5 mb-xl-0">
-                                <a class="text-decoration-none" href="/wordpress/haber">
-                                    Get More News
+                            <div class="float-right pati">
+                                <a class="label label-rounded label-primary p-1" href="/tag/review/">
+                                    Get More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -315,12 +316,12 @@
                 </div>
             </section>
 
-<section class="container bg-gray my-2">
+<section class="container bg-light my-2">
       <!-- Section Title -->
       <div class="container section-title">
         <div class="section-title-container columns col-gapless align-items-center justify-content-between">
           <h2 class="column col col-6 col-lg-6 col-md-12 col-sm-12 col-mr-auto">Latest Fimware Updates</h2>
-        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/announcement/">See All Announcements</a></div>
+        <div class="column col col-2 col-lg-6 col-md-12 col-sm-12 col-ml-auto my-2 py-2"><a href="https://www.dailycameranews.com/tag/firmware/">See All Firmware Updates</a></div>
         </div>
       </div><!-- End Section Title -->
             <div class="columns pax">
@@ -328,7 +329,7 @@
 									// WP_Query arguments
 										$args = array(
    										'post_type'              => array( 'post' ),
-                      'posts_per_page'         => '4',
+                      'posts_per_page'         => '6',
     									'orderby'                => 'DESC',
 								);
 
