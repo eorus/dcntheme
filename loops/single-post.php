@@ -46,12 +46,11 @@
   </article>
 <div class="text-small my-5">
 
-    <i class="fa fa-calendar px-1"></i>
+    <i class="bi bi-calendar-fill px-1"></i>
     <time datetime=2020-11-05><?php b5st_post_date(); ?></time> <span class="px-2">•</span>
-		<i class="fas fa-file"></i>
+		<i class="bi bi-file-text-fill"></i>
 		Topics : <?php the_category( ', ' ); ?> <span class="px-2">•</span>
-		<i class="fas fa-tag"></i>
-		<?php if (has_tag()) { ?>
+		<i class="bi bi-tag-fill px-1"></i>		<?php if (has_tag()) { ?>
 		<?php the_tags('Tags: ', ', '); ?>
     <?php  }; ?>
 
@@ -114,14 +113,14 @@
  <?php if (strlen(get_previous_post()->post_title) > 0) { ?>
   <li class="page-item page-prev">
     <div class="page-item-subtitle">Previous</div>
-    <div class="page-item-title h5"><i class="fas fa-chevron-circle-left fa-lg mx-2"></i><?php previous_post_link( '%link', '%title' ) ?></div>
+    <div class="page-item-title h5"><i class="bi bi-chevron-double-left mx-2"></i><?php previous_post_link( '%link', '%title' ) ?></div>
   </li>
      <?php } ?>
 
      <?php if (strlen(get_next_post()->post_title) > 0) { ?>
   <li class="page-item page-next">
      <div class="page-item-subtitle">Next</div>
-     <div class="page-item-title h5"><?php next_post_link( '%link', '%title' ) ?><i class="fas fa-chevron-circle-right fa-lg mx-2"></i></div>
+     <div class="page-item-title h5"><?php next_post_link( '%link', '%title' ) ?><i class="bi bi-chevron-double-right fa-lg mx-2"></i></div>
   </li>
 </ul>
  <?php } ?>

@@ -36,7 +36,7 @@
 <?php endwhile; else: ?>
   <div class="wrap-md pb-5 entry-content">
     <article class="alert alert-warning px-3">
-      <i class="fas fa-exclamation-circle"></i> <?php _e('Sorry, your search yielded no results.', 'b5st'); ?>
+      <i class="bi bi-exclamation-circle-fill"></i> <?php _e('Sorry, your search yielded no results.', 'b5st'); ?>
     </article>
   </div>
 <?php endif; ?>

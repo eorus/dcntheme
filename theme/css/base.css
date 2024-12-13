@@ -11,6 +11,11 @@ a {
   display: none;
 }
 
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
 /*--------------------------------------------------------------
 # My Utils
 --------------------------------------------------------------*/
@@ -237,7 +242,7 @@ a {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--bs-success-rgb);
+  background-color: #4493f8;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -246,13 +251,13 @@ a {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--bs-info);
+  color: #fff;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: var(--bs-success-rgb);
-  color: var(--bs-info);
+  background-color: #3b5998;
+  color: #fff;
 }
 
 .scroll-top.active {

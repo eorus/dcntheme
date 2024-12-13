@@ -28,7 +28,7 @@ function b5st_navbar_brand() {
                           </picture>
 </a>
 
-    <!--<i class="fas fa-university fa-2x"></i><a class="navbar-brand py-3 d-flex align-items-center" href="<?php echo esc_url( home_url('/') ); ?>"><span class="text-uppercase text-small fw-bold text-dark ms-2 mb-0"><?php bloginfo('name'); ?></span></a>-->
+    <!--<i class="bi bi-collection-fill"></i><a class="navbar-brand py-3 d-flex align-items-center" href="<?php echo esc_url( home_url('/') ); ?>"><span class="text-uppercase text-small fw-bold text-dark ms-2 mb-0"><?php bloginfo('name'); ?></span></a>-->
 
     <?php
   } else {
