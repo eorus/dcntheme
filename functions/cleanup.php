@@ -7,7 +7,7 @@
 
 if ( ! function_exists('b5st_cleanup_head') ) {
   function b5st_cleanup_head() {
-    remove_action('wp_head', 'wp_generator');
+   // remove_action('wp_head', 'wp_generator');
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');
     remove_action('wp_head', 'index_rel_link');
@@ -30,15 +30,6 @@ if ( ! function_exists('show_less_login_info') ) {
   }
 }
 add_filter( 'login_errors', 'show_less_login_info' );
-
-// Do not generate and display WordPress version
-
-if ( ! function_exists('b5st_remove_generator') ) {
-  function b5st_remove_generator()  {
-    return '';
-  }
-}
-add_filter( 'the_generator', 'no_generator' );
 
 // Remove Query Strings From Static Resources
 
